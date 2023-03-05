@@ -1,0 +1,36 @@
+.resume-section {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    font-family: "Poppins", sans-serif;
+}
+
+.list-inline {
+    list-style: none;
+}
+
+.list-icons {
+    font-size: 2.5rem;
+}
+
+#skill-bars {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* .progress-bar,
+.btn {
+    background-image: linear-gradient(to right,
+            #bfefff,
+            #8dd2f3,
+            #5fb4e8,
+            #3594dc,
+            #1874cd);
+} */
+
+.fa-user-tag,
+.blue,
+.list-inline-item i:hover {
+    color: #5fb4e8;
+    transition: all 0.2s ease-in-out;
+}

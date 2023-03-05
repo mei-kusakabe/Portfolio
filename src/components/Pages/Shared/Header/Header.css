@@ -1,0 +1,43 @@
+/* for-small-devices*/
+@media (min-width: 320px) and (max-width : 768px) {
+
+    .nav {
+        overflow-y: hidden;
+    }
+
+    nav img {
+        height: 60px;
+        width: 32px;
+        margin: auto;
+    }
+
+    .link-button {
+        text-decoration: none;
+        /* background-image: linear-gradient(tomato, salmon); */
+        /* color: white; */
+        background-image: none;
+        color: #EB6440;
+        padding: 0px 6px;
+        border-radius: 5px;
+    }
+
+    .link-button:hover {
+        color: #497174;
+    }
+
+
+
+
+}
+
+
+/* for-tablet-devices */
+
+@media (min-width: 769px) and (max-width : 1200px) {
+
+    nav img {
+        height: 60px;
+        width: 32px;
+    }
+
+}
