@@ -29,10 +29,8 @@ const Home = () => {
     // }
     return (
         <div className='mt-5'>
-            <section className="top-banner mx-5 flexible-container">
-
+            {/* <section className="top-banner mx-5 flexible-container">
                 <div className="half-width">
-                    {/* <h1><span className="orange-clr">Jafrin Iqbal Chowdhury</span></h1> */}
                     <main class="container">
                         <p>Hello 👋 I'm</p>
                         <section class="animation py-2 rounded">
@@ -41,7 +39,6 @@ const Home = () => {
                             <div class="third"><div>Front-End Developer</div></div>
                         </section>
                     </main>
-                    {/* <h3>Front-End Web Developer</h3> */}
                     <p>
                         An individual with a bachelor's degree who is enthusiastic about computer science and engineering and has an aptitude for self-learning.
                     </p>
@@ -58,10 +55,32 @@ const Home = () => {
                 <div className="half-width">
                     <img src="https://i.ibb.co/GnnYX3Z/jaf-bg.png" alt="jaf-bg" border="0" />
                 </div>
+            </section > */}
 
+            <div className="hero min-h-screen -mt-8 bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <img src="https://i.postimg.cc/ZnPpLmHy/Untitled.png" className="max-w-sm rounded-lg shadow-2xl" />
 
+                    <div className='text-center md:text-left'>
+                        <p className="text-4xl font-bold mb-5">Hello 👋 I'm</p>
+                        <section class="animation py-2 mb-5 rounded">
+                            <div class="first"><div>Full-Stack Developer</div></div>
+                            <div class="second"><div>ReactJS Develoepr</div></div>
+                            <div class="third"><div>Front-End Developer</div></div>
+                        </section>
+                        <p className="">An individual with a bachelor's degree who is enthusiastic about computer science and engineering and has an aptitude for self-learning.</p>
+                        <p className="py-6">I am extremely dedicated to creating the website you desire. Your satisfaction is my utmost objective and I am passionate about my work.</p>
+                        {/* <button className="btn btn-primary" href="1.pdf" download="Jafrin_Resume.pdf" ><FaDownload></FaDownload>Download Resume</button> */}
+                        <div className='flex items-center justify-center lg:justify-start'>
+                            <a href="1.pdf" download="Jafrin_Resume.pdf" className="btn btn-primary mr-2">
+                                <FaDownload className='mr-2'></FaDownload>Download Resume</a>
+                            <a className="btn btn-warning ml-2" href="/contact"
+                            >Hire Me</a>
+                        </div>
 
-            </section >
+                    </div>
+                </div>
+            </div>
             <About></About>
             <Projects></Projects>
             <Services></Services>
