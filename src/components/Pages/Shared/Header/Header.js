@@ -1,35 +1,45 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FaDownload, FaEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
-            <Navbar collapseOnSelect className='nav-bg text-white' expand="lg" variant="light">
-                <Container>
-                    <div className=''>
-                        <span>
-                            <img src="https://cdn-icons-png.flaticon.com/512/1063/1063299.png" alt="Logo" width="40" height="45" className="d-inline-block align-text-center" />
-                            <Navbar.Brand href="/" className='fw-bold title'>  Jafrin Iqbal Chowdhury</Navbar.Brand>
-                        </span>
-                    </div>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className='ms-auto'>
-                            {/* <Nav.Link href="/" className='pe-2 fw-bold link-button' style={{ textDecoration: 'underline', color: "#EB6440", textDecorationColor: "#EB6440" }}>Home</Nav.Link>
-                                <Nav.Link href="/ad" className='pe-2 fw-bold link-button' style={{ textDecoration: 'underline', color: "#EB6440", textDecorationColor: "#EB6440" }}>Projects</Nav.Link>
-                                <Nav.Link href="/blog" className='pe-2 fw-bold link-button' style={{ textDecoration: 'underline', color: "#EB6440", textDecorationColor: "#EB6440" }}>Contact Me</Nav.Link>
-                                <Nav.Link href="https://drive.google.com/file/d/1VwIb0aQHqyPAIht88e48L0S1MY4B5sXK/view?usp=sharing" className='pe-2 fw-bold' style={{ textDecoration: 'underline', color: "#EB6440", textDecorationColor: "#EB6440" }}>View Resume</Nav.Link> */}
+        <div className="navbar bg-base-100" data-theme="business">
+            <div className="navbar-start">
+                <div className="dropdown">
+                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><Link>Home</Link></li>
+                        <li tabIndex={0}>
+                            <Link className="justify-between">
+                                Parent
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                            </Link>
+                            <ul className="p-2">
+                                <li><Link>Submenu 1</Link></li>
+                                <li><Link>Submenu 2</Link></li>
+                            </ul>
+                        </li>
+                        <li><Link>Item 3</Link></li>
+                    </ul>
+                </div >
+                <Link className="btn btn-ghost normal-case text-xl">
 
-                            <Nav.Link href="/" className='pe-2 me-2 fw-bold link-button'>Home</Nav.Link>
-                            <Nav.Link href="/projects" className='pe-2 me-2 fw-bold link-button' >Projects</Nav.Link>
-                            <Nav.Link href="/contact" className='pe-2  me-3 fw-bold link-button' >Contact Me</Nav.Link>
-                            <Nav.Link href="https://drive.google.com/file/d/1VwIb0aQHqyPAIht88e48L0S1MY4B5sXK/view?usp=sharing" className='pe-2 me-2 fw-bold link-button'><FaEye></FaEye>View Resume</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+                    <i className="fa-solid fa-briefcase mx-2"></i>  Jafrin Iqbal Chowdhury</Link>
+            </div >
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1">
+                    <li><Link to="/"><i className="fa-solid fa-house-chimney mx-1"></i>Home</Link></li>
+                    <li><Link to="/projects"><i className="fa-solid fa-list-check mx-1"></i>Projects</Link></li>
+                    <li><Link to="/contact"><i className="fa-regular fa-address-book mx-1"></i>Contact</Link></li>
+                </ul >
+            </div >
+            <div className="navbar-end">
+                <a href="https://drive.google.com/file/d/1VwIb0aQHqyPAIht88e48L0S1MY4B5sXK/view?usp=sharing" className="btn"><i className="fa-solid fa-eye mx-1"></i>View Resume</a>
+            </div>
         </div >
     );
 };
