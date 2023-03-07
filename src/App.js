@@ -6,7 +6,7 @@ import { routes } from './components/Pages/Routes/Routes';
 function App() {
 
   return (
-    <div data-theme="business">
+    <div data-theme="">
       <RouterProvider router={routes}></RouterProvider>
     </div>
   );
